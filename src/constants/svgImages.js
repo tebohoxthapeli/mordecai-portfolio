@@ -24,8 +24,10 @@ import typescript from "../assets/images/svg/typescript.svg";
 import vuedotjs from "../assets/images/svg/vuedotjs.svg";
 import circle from "../assets/images/svg/circle.svg";
 import tailwindcss from "../assets/images/svg/tailwindcss.svg";
+import mordecaiLogo from "../assets/images/svg/mordecai-logo.svg";
 
 const images = {
+    mordecaiLogo,
     tailwindcss,
     circle,
     amazonaws,

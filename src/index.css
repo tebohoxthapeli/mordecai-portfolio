@@ -18,8 +18,4 @@
     .right-0-perc {
         right: 0%;
     }
-
-    .cropped-screen {
-        min-height: calc(100vh - 5rem);
-    }
 }

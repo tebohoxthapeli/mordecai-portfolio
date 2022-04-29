@@ -1,44 +1,42 @@
 import { svgImages, otherImages } from "../../constants";
 
-const { react, circle, nodedotjs, mongodb, tailwindcss } = svgImages;
+const { circle } = svgImages; // nodedotjs, mongodb, tailwindcss, react,
 const { mordecaiPerson } = otherImages;
 
 function index() {
     return (
-        <div className="cropped-screen mt-20 flex items-center gap-4 bg-slate-800 px-8">
-            <div className="flex-[1_1_45%] space-y-4">
-                <p className="text-center text-2xl font-light text-slate-300">
-                    Hello there. The name is{" "}
-                    <span className="text-8xl font-bold uppercase text-lime-500">Mordecai</span>
+        <div className="cropped-screen container mx-auto mt-[72px] flex items-center gap-4 px-8">
+            <div className="flex-1 space-y-16">
+                <p className="text-center font-light text-slate-300">
+                    Hello there.{" "}
+                    <span className="font-semibold uppercase text-white underline decoration-lime-500 decoration-2 underline-offset-4">
+                        Mordecai
+                    </span>{" "}
+                    is the name.
                 </p>
 
-                <div>
-                    <p className="text-center text-slate-400">
-                        I'm a fullstack software engineer <span className="text-2xl">🚀</span>
-                    </p>
+                <p className="text-center text-6xl font-bold text-white">
+                    I'm a <span className="text-lime-500">fullstack software engineer</span>{" "}
+                    <span className="text-4xl">🚀</span>
+                </p>
 
-                    <p className="text-center text-slate-400">
-                        And yes, that's me <span className="text-2xl">😳</span>
-                    </p>
-                </div>
+                <p className="text-center text-lg text-slate-400">
+                    Need a top-class user interface? Well designed database? How about highly
+                    performant websites and apps? <br />{" "}
+                    <span className="text-xl font-medium uppercase text-white">
+                        i am here to save the day!
+                    </span>
+                </p>
             </div>
 
-            <div className="relative flex flex-[1_1_45%] justify-center">
+            <div className="relative flex flex-1 justify-center saturate-200">
                 <img src={mordecaiPerson} alt="profile_bg" className="z-10 w-4/5 object-contain" />
 
                 <img
                     src={circle}
                     alt=""
-                    className="absolute left-0 bottom-0 right-0 h-[90%] w-full object-contain"
+                    className="absolute left-0 bottom-0 h-[90%] w-full object-contain"
                 />
-            </div>
-
-            <div className="flex-[1_1_10%] space-y-4">
-                {[nodedotjs, tailwindcss, react, mongodb].map((item) => (
-                    <div className="flex h-14 w-14 items-center justify-center rounded-full bg-slate-100">
-                        <img src={item} alt="" className="h-3/4 w-3/4" />
-                    </div>
-                ))}
             </div>
         </div>
     );

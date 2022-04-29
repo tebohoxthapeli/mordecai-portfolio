@@ -1,11 +1,11 @@
-import { Navbar } from "./components";
-import { Header } from "./components";
+import { Navbar, Header, About } from "./components";
 
 function App() {
     return (
-        <div className="bg-slate-800">
+        <div className="container mx-auto">
             <Navbar />
             <Header />
+            <About />
         </div>
     );
 }
