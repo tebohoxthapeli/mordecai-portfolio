@@ -40,11 +40,11 @@ module.exports = {
         },
     },
     plugins: [
-        plugin(({ addUtilities, theme }) => {
+        require("@tailwindcss/line-clamp"),
+        plugin(({ addUtilities }) => {
             addUtilities({
                 ".cropped-screen": {
                     "min-height": "calc(100vh - 72px)",
-                    "min-width": theme("spacing."),
                 },
             });
         }),

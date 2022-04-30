@@ -19,10 +19,6 @@ const linksComponents = [
         icon: "bx-cool",
     },
     {
-        title: "brands",
-        icon: "bxl-amazon",
-    },
-    {
         title: "testimonials",
         icon: "bx-star",
     },
@@ -36,7 +32,7 @@ function Navbar() {
     const [isSideMenuOpen, setIsSideMenuOpen] = useState(false);
 
     return (
-        <div className="container  fixed top-0 right-0 left-0 z-40 mx-auto flex w-full items-center justify-between border-b border-b-slate-500/50 bg-slate-900 py-4 px-8">
+        <div className="container  fixed top-0 right-0 left-0 z-40 mx-auto flex w-full items-center justify-between border-b border-b-slate-500/50 bg-slate-900/80 py-4 px-8 backdrop-blur-sm transition-colors duration-500 hover:bg-slate-900/100">
             <div className="w-32">
                 <img src={svgImages.mordecaiLogo} alt="logo" />
             </div>
@@ -47,11 +43,11 @@ function Navbar() {
                         <li key={title} className="relative px-4">
                             <a
                                 href={`#${title}`}
-                                className="peer z-50 text-sm tracking-wide text-lime-300 transition-all duration-300 hover:text-white"
+                                className="peer z-50 text-sm tracking-wide text-lime-400 transition-all duration-300 hover:text-white"
                             >
                                 {title}
                             </a>
-                            <div className="pointer-events-none absolute top-1/2 left-1/2 z-40 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rounded-full bg-transparent transition-all duration-300 peer-hover:-top-2 peer-hover:h-1 peer-hover:w-1 peer-hover:bg-lime-300" />
+                            <div className="pointer-events-none absolute top-1/2 left-1/2 z-40 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rounded-full bg-transparent transition-all duration-300 peer-hover:-top-2 peer-hover:h-1 peer-hover:w-1 peer-hover:bg-lime-400" />
                         </li>
                     ))}
                 </ul>
