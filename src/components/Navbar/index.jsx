@@ -11,11 +11,7 @@ const linksComponents = [
         icon: "bx-brain",
     },
     {
-        title: "experience",
-        icon: "bx-briefcase-alt-2",
-    },
-    {
-        title: "personal projects",
+        title: "projects",
         icon: "bx-cool",
     },
     {

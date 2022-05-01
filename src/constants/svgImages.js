@@ -25,8 +25,12 @@ import vuedotjs from "../assets/images/svg/vuedotjs.svg";
 import circle from "../assets/images/svg/circle.svg";
 import tailwindcss from "../assets/images/svg/tailwindcss.svg";
 import mordecaiLogo from "../assets/images/svg/mordecai-logo.svg";
+import eye from "../assets/images/svg/eye.svg";
+import github from "../assets/images/svg/github.svg";
 
 const images = {
+    github,
+    eye,
     mordecaiLogo,
     tailwindcss,
     circle,

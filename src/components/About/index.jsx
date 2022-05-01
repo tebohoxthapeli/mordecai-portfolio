@@ -19,14 +19,14 @@ const abouts = [
     },
 ];
 
-function index() {
+function About() {
     return (
-        <div className="space-y-12 py-12 cropped-screen">
-            <h2 className="text-center text-4xl font-bold uppercase text-white">
-                what i can do <span className="text-lime-400">for you</span>
+        <div className="section">
+            <h2>
+                what i can do <span>for you</span>
             </h2>
 
-            <div className="mx-auto grid w-4/5 grid-cols-3 gap-12">
+            <div className="inner-content grid grid-cols-2 gap-16">
                 {abouts.map(({ title, image }) => (
                     <div key={title} className="h-96 overflow-hidden rounded-lg bg-lime-900">
                         <div className="relative h-3/5">
@@ -36,9 +36,9 @@ function index() {
                                 className="h-full w-full object-cover brightness-50"
                             />
 
-                            <h2 className="absolute bottom-0 left-1/2 -translate-x-1/2 rounded-tl-md rounded-tr-md border-b border-b-lime-700 border-dashed bg-lime-900 p-2 text-center font-medium text-white">
+                            <h3 className="absolute bottom-0 left-1/2 -translate-x-1/2 rounded-tl-md rounded-tr-md border-b border-dashed border-b-lime-700 bg-lime-900 p-2 text-center font-medium text-white">
                                 {title}
-                            </h2>
+                            </h3>
                         </div>
 
                         <div className="h-2/5 p-4">
@@ -56,4 +56,4 @@ function index() {
     );
 }
 
-export default index;
+export default About;

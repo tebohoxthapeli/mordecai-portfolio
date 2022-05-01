@@ -13,7 +13,8 @@
         "web-vitals": "^2.1.4"
     },
     "scripts": {
-        "start": "react-scripts start",
+        "start": "concurrently \"npm run start:css\" \"react-scripts start\"",
+        "start:css": "postcss ./tailwind.css -o ./src/index.css --watch",
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject"
@@ -51,7 +52,9 @@
     "devDependencies": {
         "@tailwindcss/line-clamp": "^0.4.0",
         "autoprefixer": "^10.4.5",
+        "concurrently": "^7.1.0",
         "postcss": "^8.4.12",
+        "postcss-cli": "^9.1.0",
         "prettier": "^2.6.2",
         "prettier-plugin-tailwindcss": "^0.1.10",
         "tailwindcss": "^3.0.24"
