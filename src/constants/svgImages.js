@@ -27,8 +27,14 @@ import tailwindcss from "../assets/images/svg/tailwindcss.svg";
 import mordecaiLogo from "../assets/images/svg/mordecai-logo.svg";
 import eye from "../assets/images/svg/eye.svg";
 import github from "../assets/images/svg/github.svg";
+import filterCircleDollar from "../assets/images/svg/filter-circle-dollar-solid.svg";
+import language from "../assets/images/svg/language-solid.svg";
+import travelMap from "../assets/images/svg/map-solid.svg";
 
 const images = {
+    travelMap,
+    language,
+    filterCircleDollar,
     github,
     eye,
     mordecaiLogo,
