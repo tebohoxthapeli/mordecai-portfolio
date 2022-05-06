@@ -27,14 +27,14 @@
         @apply text-center text-4xl font-bold uppercase text-white;
 
         span {
-            @apply text-lime-400;
+            @apply text-lime-500;
         }
     }
 }
 
 @layer components {
     .section {
-        @apply space-y-12 py-12 cropped-screen;
+        @apply space-y-12 pt-12 cropped-screen;
     }
 
     .inner-content {
@@ -67,11 +67,11 @@
                 }
 
                 .secondary-btn {
-                    @apply btn inline-flex items-center gap-4 border-2 border-lime-500 text-slate-400 hover:bg-lime-500/10;
+                    @apply btn inline-flex items-center gap-4 border-2 border-lime-500 text-white hover:bg-lime-500/20;
                 }
 
                 .btn-icon {
-                    @apply inline-block h-6 w-6;
+                    @apply h-6 w-6;
                 }
             }
         }
@@ -82,6 +82,14 @@
             img {
                 @apply h-32 w-32 invert;
             }
+        }
+    }
+
+    .circle-btn {
+        @apply inline-flex h-10 w-10 items-center justify-center rounded-full bg-lime-500 hover:bg-lime-600 active:scale-95;
+
+        img {
+            @apply h-3/5 w-3/5;
         }
     }
 }

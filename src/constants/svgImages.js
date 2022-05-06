@@ -30,8 +30,12 @@ import github from "../assets/images/svg/github.svg";
 import filterCircleDollar from "../assets/images/svg/filter-circle-dollar-solid.svg";
 import language from "../assets/images/svg/language-solid.svg";
 import travelMap from "../assets/images/svg/map-solid.svg";
+import angleRight from "../assets/images/svg/angle-right-solid.svg";
+import angleLeft from "../assets/images/svg/angle-left-solid.svg";
 
 const images = {
+    angleRight,
+    angleLeft,
     travelMap,
     language,
     filterCircleDollar,
