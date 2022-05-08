@@ -1,5 +1,4 @@
 import mordecaiPerson from "../assets/images/other/mordecai-coffee-removebg.png";
-import mordecaiLogo from "../assets/images/other/full-logo.PNG";
 import apis from "../assets/images/other/apis.jpg";
 import backendDev from "../assets/images/other/backend-development.jpg";
 import database from "../assets/images/other/database.jpg";
@@ -12,7 +11,6 @@ const images = {
     pops,
     rigby,
     benson,
-    mordecaiLogo,
     mordecaiPerson,
     apis,
     backendDev,

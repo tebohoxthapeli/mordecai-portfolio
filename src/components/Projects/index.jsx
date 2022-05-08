@@ -1,4 +1,5 @@
 import Wrapper from "../Wrapper";
+import Button from "../Button";
 import { svgImages } from "../../constants";
 
 const { github, eye, filterCircleDollar, language, travelMap } = svgImages;
@@ -35,28 +36,16 @@ function Projects() {
                 <div className="mx-auto w-4/5 space-y-12 text-white">
                     {projects.map(({ title, description, icon }, index) =>
                         (index + 1) % 2 !== 0 ? (
-                            <div className="projects-content">
+                            <div className="projects-content" key={title}>
                                 <div className="info rounded-tr-xl rounded-br-xl border-l-8">
                                     <h3 className="title">{title}</h3>
 
                                     <p className="description">{description}</p>
 
                                     <div className="btn-container">
-                                        <button className="primary-btn">
-                                            <div className="btn-icon">
-                                                <img src={github} alt="" />
-                                            </div>
+                                        <Button icon={github} label="live demo" primary />
 
-                                            <span>live demo</span>
-                                        </button>
-
-                                        <button className="secondary-btn">
-                                            <div className="btn-icon">
-                                                <img src={eye} alt="" />
-                                            </div>
-
-                                            <span>source code</span>
-                                        </button>
+                                        <Button icon={eye} label="source code" />
                                     </div>
                                 </div>
 
@@ -65,7 +54,7 @@ function Projects() {
                                 </div>
                             </div>
                         ) : (
-                            <div className="projects-content">
+                            <div className="projects-content" key={title}>
                                 <div className="decorative-icon">
                                     <img src={icon} alt="" />
                                 </div>
@@ -76,21 +65,9 @@ function Projects() {
                                     <p className="description">{description}</p>
 
                                     <div className="btn-container">
-                                        <button className="primary-btn">
-                                            <span className="btn-icon">
-                                                <img src={github} alt="" />
-                                            </span>
+                                        <Button icon={github} label="live demo" primary />
 
-                                            <span>live demo</span>
-                                        </button>
-
-                                        <button className="secondary-btn">
-                                            <span className="btn-icon">
-                                                <img src={eye} alt="" />
-                                            </span>
-
-                                            <span>source code</span>
-                                        </button>
+                                        <Button icon={eye} label="source code" />
                                     </div>
                                 </div>
                             </div>

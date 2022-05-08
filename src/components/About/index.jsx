@@ -30,7 +30,7 @@ function About() {
 
                 <div className="inner-content grid grid-cols-2 gap-16">
                     {abouts.map(({ title, image }) => (
-                        <div key={title} className="h-96 overflow-hidden rounded-lg bg-lime-900">
+                        <div key={title} className="h-96 overflow-hidden rounded-lg">
                             <div className="relative h-3/5">
                                 <img
                                     src={image}
@@ -38,12 +38,12 @@ function About() {
                                     className="h-full w-full object-cover brightness-50"
                                 />
 
-                                <h3 className="absolute bottom-0 left-1/2 -translate-x-1/2 rounded-tl-md rounded-tr-md border-b border-dashed border-b-lime-600 bg-lime-900 py-2 px-4 text-center font-medium text-white">
+                                <h3 className="absolute bottom-[-2px] left-1/2 -translate-x-1/2 rounded-tl-md rounded-tr-md border-2 border-b-0 border-lime-600 bg-lime-800 px-4 pt-2 text-center font-medium text-white">
                                     {title}
                                 </h3>
                             </div>
 
-                            <div className="h-2/5 p-4">
+                            <div className="h-2/5 rounded-br-lg rounded-bl-lg border-2 border-lime-600 bg-lime-800 p-4">
                                 <div className="text-center text-sm text-slate-300 line-clamp-5">
                                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                                     Nesciunt possimus maxime aperiam provident, ducimus sed. sdnskd
