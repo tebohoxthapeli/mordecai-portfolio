@@ -33,7 +33,7 @@ function Projects() {
                     <span>projects?</span> got that covered
                 </h2>
 
-                <div className="mx-auto w-4/5 space-y-12 text-white">
+                <div className="mx-auto w-11/12 space-y-12 text-white xl:w-4/5">
                     {projects.map(({ title, description, icon }, index) =>
                         (index + 1) % 2 !== 0 ? (
                             <div className="projects-content" key={title}>

@@ -12,7 +12,7 @@ function Button({
         <button
             type={type}
             onClick={onClick}
-            className={`btn disabled:bg-gray-400 ${primary ? "primary-btn" : "secondary-btn"}`}
+            className={`disabled:bg-gray-400 ${primary ? "primary-btn" : "secondary-btn"}`}
             disabled={disabled}
         >
             <div className="btn-icon">

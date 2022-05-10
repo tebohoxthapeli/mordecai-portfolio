@@ -50,8 +50,8 @@ function Testimonials() {
                 </h2>
 
                 <div className="inner-content space-y-8">
-                    <div className="flex h-80 flex-1 overflow-hidden rounded-xl bg-slate-800">
-                        <div className="flex-[1] bg-slate-400">
+                    <div className="flex flex-col items-center gap-8 overflow-hidden rounded-xl bg-slate-800 p-4 md:h-80 md:flex-row md:p-0 md:pr-8">
+                        <div className="h-40 w-40 overflow-hidden rounded-full bg-slate-400 md:h-full md:flex-[1] md:rounded-none">
                             <img
                                 src={image}
                                 alt=""
@@ -59,8 +59,10 @@ function Testimonials() {
                             />
                         </div>
 
-                        <div className="my-auto h-fit flex-[2] space-y-4 px-8">
-                            <p className="text-lg text-white line-clamp-6">{feedback}</p>
+                        <div className="my-auto h-fit space-y-4 text-center md:flex-[2]">
+                            <p className="max-w-md text-white line-clamp-6 xl:text-lg">
+                                {feedback}
+                            </p>
 
                             <div>
                                 <p className="font-semibold text-lime-400">{name}</p>

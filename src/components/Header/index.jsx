@@ -7,24 +7,24 @@ const { mordecaiPerson } = otherImages;
 function Header() {
     return (
         <Wrapper id="home">
-            <div className="flex items-center gap-4 px-8 cropped-screen">
+            <div className="borders flex items-center gap-4 px-8 cropped-screen">
                 <div className="flex-1 space-y-10">
-                    <p className="text-left text-white">
+                    <p className="text-center text-sm text-white lg:text-left lg:text-base">
                         Hello there.{" "}
-                        <span className="uppercase underline decoration-lime-500 decoration-2 underline-offset-4 tracking-widest">
+                        <span className="uppercase tracking-widest underline decoration-lime-500 decoration-2 underline-offset-4">
                             Mordecai
                         </span>{" "}
                         is the name.
                     </p>
 
-                    <p className="text-left text-6xl font-bold text-white">
+                    <p className="text-center text-4xl font-bold text-white lg:text-left lg:text-5xl xl:text-6xl">
                         I'm a <span className="text-lime-500">fullstack software engineer</span>
                     </p>
 
-                    <p className="text-center text-lg text-slate-400">
+                    <p className="text-center text-sm text-slate-400 lg:text-base xl:text-lg">
                         Need a top-class user interface? Well designed database? How about highly
                         performant websites and apps? <br />{" "}
-                        <span className="font-semibold uppercase text-white tracking-widest">
+                        <span className="font-medium uppercase tracking-widest text-white lg:font-semibold">
                             i am here to save the day!
                         </span>
                     </p>

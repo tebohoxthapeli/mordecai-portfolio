@@ -1,26 +1,28 @@
 import { useState } from "react";
 import { svgImages } from "../../constants";
 
+const { mordecaiLogo, user, brain, bars, comment, phoneLime, clipboard, xmark } = svgImages;
+
 const linksComponents = [
     {
         title: "about",
-        icon: "bx-user",
+        icon: user,
     },
     {
         title: "skills",
-        icon: "bx-brain",
+        icon: brain,
     },
     {
         title: "projects",
-        icon: "bx-cool",
+        icon: clipboard,
     },
     {
         title: "testimonials",
-        icon: "bx-star",
+        icon: comment,
     },
     {
         title: "contact",
-        icon: "bx-phone",
+        icon: phoneLime,
     },
 ];
 
@@ -30,7 +32,7 @@ function Navbar() {
     return (
         <div className="container  fixed top-0 right-0 left-0 z-40 mx-auto flex w-full items-center justify-between border-b border-b-slate-500/50 bg-slate-900/80 py-4 px-8 backdrop-blur-sm transition-colors duration-500 hover:bg-slate-900/100">
             <a href="#home" className="w-32">
-                <img src={svgImages.mordecaiLogo} alt="logo" />
+                <img src={mordecaiLogo} alt="logo" />
             </a>
 
             <nav className="hidden lg:block">
@@ -43,6 +45,7 @@ function Navbar() {
                             >
                                 {title}
                             </a>
+
                             <div className="pointer-events-none absolute top-1/2 left-1/2 z-40 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rounded-full bg-transparent transition-all duration-300 peer-hover:-top-2 peer-hover:h-1 peer-hover:w-1 peer-hover:bg-lime-500" />
                         </li>
                     ))}
@@ -50,10 +53,10 @@ function Navbar() {
             </nav>
 
             <button
-                className="flex items-center text-3xl text-slate-400 hover:text-white lg:hidden"
+                className="icon-btn hover:bg-slate-800 lg:hidden"
                 onClick={() => setIsSideMenuOpen(true)}
             >
-                <i className="bx bx-menu"></i>
+                <img src={bars} alt="open menu" className="invert" />
             </button>
 
             <div
@@ -64,9 +67,9 @@ function Navbar() {
                 <div className="flex justify-end">
                     <button
                         onClick={() => setIsSideMenuOpen(false)}
-                        className="text-3xl text-slate-400 hover:text-white"
+                        className="icon-btn hover:bg-slate-900"
                     >
-                        <i className="bx bx-x"></i>
+                        <img src={xmark} alt="close menu" className="invert" />
                     </button>
                 </div>
 
@@ -77,11 +80,13 @@ function Navbar() {
                                 <a
                                     href={`#${title}`}
                                     onClick={() => setIsSideMenuOpen(false)}
-                                    className="group relative flex items-center gap-4 py-2 text-slate-400 hover:text-white"
+                                    className="my-2 flex items-center gap-4 rounded-lg p-2 text-lime-500 hover:bg-slate-900"
                                 >
-                                    <i className={`bx ${icon} text-2xl`}></i>
+                                    <div className="h-6 w-6">
+                                        <img src={icon} alt="" className="h-full w-full" />
+                                    </div>
+
                                     <p>{title}</p>
-                                    <div className="absolute top-1/2 right-0 h-2 w-2 -translate-y-1/2 rounded-full bg-transparent group-hover:bg-blue-400" />
                                 </a>
                             </li>
                         ))}

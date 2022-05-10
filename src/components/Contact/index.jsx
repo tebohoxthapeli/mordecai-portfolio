@@ -37,7 +37,7 @@ function Contact() {
                 </h2>
 
                 <div className="inner-content space-y-12 pb-12">
-                    <div className="flex gap-8">
+                    <div className="flex flex-wrap justify-center gap-8">
                         <Card href="phone" detail="012 345 6789" icon={phoneIcon} title="phone" />
 
                         <Card
@@ -55,7 +55,7 @@ function Contact() {
                     >
                         {({ isValid, dirty, errors, touched }) => {
                             return (
-                                <Form className="flex flex-col items-center gap-8">
+                                <Form className="flex flex-col justify-center items-center gap-8">
                                     <Input
                                         errors={errors}
                                         touched={touched}

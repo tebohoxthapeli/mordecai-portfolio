@@ -82,19 +82,19 @@ function Skills() {
                     i'm <span>skill</span>ed in some ways
                 </h2>
 
-                <div className="inner-content grid grid-cols-3 gap-4">
+                <div className="inner-content grid grid-cols-2 gap-4 md:grid-cols-3">
                     {skills.splice(0, 8).map(({ name, icon, years }) => (
                         <div key={name} className="space-y-4 py-4 text-white">
-                            <div className="mx-auto h-20 w-20 rounded-full bg-white p-4">
+                            <div className="mx-auto h-20 w-20 rounded-full bg-white p-4 md:h-16 md:w-16 xl:h-20 xl:w-20">
                                 <img src={icon} alt="" />
                             </div>
 
-                            <div>
-                                <h3 className="text-center text-lg font-medium tracking-wide">
+                            <div className="text-center">
+                                <h3 className="text-base font-medium tracking-wide xl:text-lg">
                                     {name}
                                 </h3>
 
-                                <p className="text-center text-sm font-semibold text-lime-500">
+                                <p className="text-xs font-semibold text-lime-500 xl:text-sm">
                                     {years}{" "}
                                     <span className="uppercase text-slate-400">
                                         year{years > 1 && "s"}
@@ -105,8 +105,8 @@ function Skills() {
                     ))}
 
                     {skills.length > 0 && (
-                        <div className="flex flex-col items-center justify-center gap-4 rounded-lg bg-slate-800">
-                            <p className="text-lg text-lime-500 font-medium">And many more...</p>
+                        <div className="flex flex-col items-center justify-center gap-4 rounded-lg bg-slate-800 p-4">
+                            <p className="font-medium text-lime-500 xl:text-lg">And many more...</p>
 
                             <div className="more-skills">
                                 {skills.splice(0, 3).map(({ icon, name }, index) => (

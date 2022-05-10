@@ -28,9 +28,12 @@ function About() {
                     what i can do <span>for you</span>
                 </h2>
 
-                <div className="inner-content grid grid-cols-2 gap-16">
+                <div className="inner-content grid grid-cols-1 place-items-center gap-10 md:grid-cols-2 lg:gap-16">
                     {abouts.map(({ title, image }) => (
-                        <div key={title} className="h-96 overflow-hidden rounded-lg">
+                        <div
+                            key={title}
+                            className="h-80 max-w-xs overflow-hidden rounded-lg lg:h-96"
+                        >
                             <div className="relative h-3/5">
                                 <img
                                     src={image}

@@ -19,10 +19,24 @@ import travelMap from "../assets/images/svg/map-solid.svg";
 import angleRight from "../assets/images/svg/angle-right-solid.svg";
 import angleLeft from "../assets/images/svg/angle-left-solid.svg";
 import phoneIcon from "../assets/images/svg/phone-solid.svg";
+import phoneLime from "../assets/images/svg/phone-solid-lime.svg";
 import emailIcon from "../assets/images/svg/at-solid.svg";
 import paperPlaneIcon from "../assets/images/svg/paper-plane-solid.svg";
+import bars from "../assets/images/svg/bars-solid.svg";
+import brain from "../assets/images/svg/brain-solid.svg";
+import clipboard from "../assets/images/svg/clipboard-list-solid.svg";
+import comment from "../assets/images/svg/comment-dots-solid.svg";
+import user from "../assets/images/svg/user-solid.svg";
+import xmark from "../assets/images/svg/xmark-solid.svg";
 
 const images = {
+    phoneLime,
+    bars,
+    brain,
+    clipboard,
+    comment,
+    user,
+    xmark,
     phoneIcon,
     emailIcon,
     paperPlaneIcon,
